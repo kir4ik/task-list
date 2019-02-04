@@ -1,0 +1,12 @@
+.menu, .control-panel {
+  @include row-flex();
+  margin: 0;
+  width: 100%;
+  background: $bg-clr_mode-edit;
+  margin-bottom: 1rem;
+  border: none;
+}
+.control-panel {
+  justify-content: flex-end;
+  border-radius: 0;
+}
