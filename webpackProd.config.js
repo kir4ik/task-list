@@ -10,7 +10,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: './App.js',
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'js/[name].[contenthash].js'
   },
   devtool: false,
@@ -65,7 +65,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin('public', {}),
+    new CleanWebpackPlugin('docs', {}),
     new HtmlWebpackPlugin({
       template: 'index.html'
     }),
