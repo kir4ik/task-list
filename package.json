@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "simple application react with express",
   "main": "server.js",
+  "repository": {
+    "url": "https://kir4ik.github.io/task-list.github.io/"
+  },
   "scripts": {
     "start": "webpack-dev-server --config webpackDev.config.js --mode development --open --hot --inline",
     "build": "webpack --config webpackProd.config.js --mode production"
