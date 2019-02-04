@@ -1,0 +1,45 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "simple application react with express",
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpackDev.config.js --mode development --open --hot --inline",
+    "build": "webpack --config webpackProd.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "kir4ik",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-hot-loader": "^1.4.3",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.5.0",
+    "sass-loader": "^7.1.0",
+    "smart-grid": "^2.1.2",
+    "uglify-js": "^3.4.9",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "browserslist": [
+    "> 0.25% or last 3 version",
+    "maintained node versions",
+    "not dead",
+    "edge >= 12"
+  ]
+}

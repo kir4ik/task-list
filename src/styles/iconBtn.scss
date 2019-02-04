@@ -1,0 +1,30 @@
+.del, .edit, .save, .close, .add {
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+}
+.del, .close {
+  color: $clr_btn-del;
+}
+.edit {
+  color: $clr_btn-edit;
+}
+.save, .add {
+  color: $clr_btn-save;
+}
+.del:active, .del:hover, .del:focus,
+.close:active, .close:hover, .close:focus {
+  color: $clr_btn-del_focus;
+}
+.edit:active, .edit:hover, .edit:focus {
+  color: $clr_btn-edit_focus;
+}
+.save:active, .save:hover, .save:focus,
+.add:active, .add:hover, .add:focus {
+  color: $clr_btn-save_focus;
+}

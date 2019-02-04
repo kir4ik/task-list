@@ -1,0 +1,39 @@
+/*tasks*/
+$clr_task: #afa;
+$bg-clr_task: darken(#334, 10);
+$brd-clr_task: lighten($bg-clr_task, 25);
+$bg-clr_task_content: lighten($bg-clr_task, 10);
+/*mode edit*/
+$bg-clr_mode-edit: #066;
+$clr_mode-edit: #fa0;
+$bg-clr_mode-edit: #055;
+$clr_mode-edit_focus: #033;
+$bg-clr_mode-edit_focus: #afa;
+
+$brd-sz: .125rem;
+/*window*/
+$bg-clr_window: rgba(0, 102, 102, .2);
+/*btn*/
+$clr_btn-del: desaturate(#f00, 50);
+$clr_btn-del_focus: saturate(#f00, 50);
+$clr_btn-edit: desaturate(#0ff, 50);
+$clr_btn-edit_focus: saturate(#0ff, 50);
+$clr_btn-save: desaturate(#8080ff, 50);
+$clr_btn-save_focus: saturate(#8080ff, 50);
+/*transition*/
+$trans-time: .4s;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+.container {
+  @include wrapper();
+  min-width: 260px;
+  background: $bg-clr_window;
+  overflow: hidden;
+}

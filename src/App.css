@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0.25rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: calc(100% / 3);
+}
+
+.col-3 {
+    width: calc(100% / 4);
+}
+
+.col-2 {
+    width: calc(100% / 6);
+}
+
+.task {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #0ff;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    background: #334;
+    padding: .5rem;
+    padding-top: 0;
+    border: .125rem solid #589;
+    overflow: hidden;
+}
+
+.task__title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background: #337;
+    padding: .3rem .7rem;
+    margin-bottom: .8rem;
+    border: .125rem solid #589;
+}
+
+.task__desk {
+    width: 100%;
+    background: #337;
+    padding: .3rem;
+    border: .125rem solid #589;
+}
+
+.task_edit {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #0ff;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    max-width: 50%;
+    background: #066;
+    padding: .5rem;
+    padding-top: 0;
+    border: .125rem solid #589;
+    overflow: hidden;
+}
+.task__label {
+    text-align: left;
+    padding: .1rem;
+    margin-bottom: .2rem;
+}
+
+.title_edit, .desk_edit {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+    color: #fa0;
+    background: #055;
+    padding: .3rem .1rem;
+    margin-bottom: .5rem;
+    border: none;
+    border-bottom: .125rem solid transparent;
+    resize: none;
+    transition: .4s;
+}
+.title_edit:focus, .desk_edit:focus {
+    background: #033;
+    border-bottom-color: #afa;
+}
+
+.del, .edit, .save, .close, .add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+.del, .close {
+    color: #911;
+}
+.edit {
+    color: #7a7;
+}
+.save, .add {
+    color: #3ab;
+}
+.del:active, .del:hover, .del:focus,
+.close:active, .close:hover, .close:focus {
+    color: #d55;
+}
+.edit:active, .edit:hover, .edit:focus {
+    color: #beb;
+}
+.save:active, .save:hover, .save:focus,
+.add:active, .add:hover, .add:focus {
+    color: #7ef;
+}
+
+.control-panel {
+    justify-content: flex-end;
+}
+
+.window {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgba(0, 102, 102, .2);
+    z-index: 100;
+}

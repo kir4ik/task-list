@@ -1,0 +1,108 @@
+.task {
+  @include col();
+  @include size(3);
+  @include size-md(4);
+  @include size-sm(10);
+  @include size-xs(12);
+
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: $clr_task;
+  justify-content: center;
+  align-items: center;
+  background: $bg-clr_task;
+  padding-top: 0;
+  border: $brd-sz solid $brd-clr_task;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+  &-list {
+    @include row-flex();
+    justify-content: center;
+    @include sm(justify-content, center);
+  }
+
+  &--edit {
+    @extend .task;
+  }
+
+  &__title {
+    @include col();
+    @include size(12);
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: $bg-clr_task_content;
+    padding: .3rem .7rem;
+    margin-bottom: 1rem;
+
+    &--edit {
+      @extend %mode_edit;
+
+      @include col();
+      @include size(12);
+
+      font-size: 1.2rem;
+      padding: .5rem;
+      padding-top: 0;
+      margin-bottom: .5rem;
+      transition: $trans_time;
+    }
+  }
+
+  &__desk {
+    @include col();
+    @include size(12);
+
+    background: $bg-clr_task_content;
+    padding: .3rem;
+    margin-bottom: 1rem;
+
+    &--edit {
+      @extend %mode_edit;
+
+      @include col();
+      @include size(12);
+
+      margin-bottom: .5rem;
+      border-bottom: $brd-sz solid transparent;
+      transition: $trans_time;
+    }
+  }
+
+  &__label {
+    @include col();
+    @include size(12);
+
+    text-align: left;
+    padding: .1rem;
+    margin-bottom: .2rem;
+  }
+
+  &__hint {
+    @include col();
+    @include size(12);
+  }
+}
+
+.error {
+  color: $clr_btn-del;
+}
+
+.cap {
+  @include row-flex();
+  @include col();
+  @include size(12);
+
+  font-size: 2rem;
+  min-height: 300px;
+  height: -webkit-fill-available;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: $clr_task;
+  background: $bg-clr_task;
+}
